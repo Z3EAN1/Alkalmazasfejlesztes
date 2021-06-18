@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfej.controller.MainKonyvelesController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fájl">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onBack" text="Vissza a főmenübe" />
+                  <MenuItem mnemonicParsing="false" onAction="#onExit" text="Kilép" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox prefHeight="374.0" prefWidth="454.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="614.0" text="Örökbefogadások könyvelésének listája">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="konyvelesTabla" prefHeight="345.0" prefWidth="446.0">
+              <columns>
+                <TableColumn fx:id="mikorColumn" prefWidth="81.80001527070999" text="Időpont" />
+                  <TableColumn fx:id="tamogatColumn" prefWidth="124.79998779296875" text="Támogatás típusa" />
+                  <TableColumn fx:id="ertelColumn" prefWidth="121.60005187988281" text="Összeg/Mennyiség" />
+                  <TableColumn fx:id="gyakorisagColumn" prefWidth="101.5999755859375" text="Gyakoriság" />
+                  <TableColumn fx:id="emberColumn" prefWidth="122.4000244140625" text="Örökbefogadó" />
+                  <TableColumn fx:id="allatColumn" prefWidth="109.2000732421875" text="Örökbefogadott" />
+              </columns>
+            </TableView>
+         </children></VBox>
+   </center>
+   <left>
+      <VBox prefHeight="374.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="18.0" prefWidth="129.0" text="Keresések">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="7.0" top="3.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Örökbefogadó neve:">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="emberNeve" onKeyReleased="#onKereses" />
+            <Label text="Örökbefogadott neve:" />
+            <TextField fx:id="allatNeve" onKeyReleased="#onKereses" />
+            <Button mnemonicParsing="false" onAction="#onLastyear" prefHeight="26.0" prefWidth="161.0" text="Tavalyi könyvelések">
+               <VBox.margin>
+                  <Insets bottom="7.0" top="30.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#onPenz" prefHeight="26.0" prefWidth="175.0" text="Típus(pénzösszeg)">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="25.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#onEledel" prefHeight="26.0" prefWidth="198.0" text="Típus(állateledel)" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" top="3.0" />
+         </BorderPane.margin></VBox>
+   </left>
+</BorderPane>

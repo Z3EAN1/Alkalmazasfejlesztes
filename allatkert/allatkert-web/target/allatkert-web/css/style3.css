@@ -1,0 +1,31 @@
+body{
+    background-color: darkseagreen;
+    font-family: "Times New Roman";
+    margin: 10px;
+}
+.container{
+    background-color: yellowgreen;
+    width: 30%;
+    border: 3px solid #6b6b47;
+    margin: 5px;
+    padding: 5px;
+}
+.gomb1{
+    font-size: 20px;
+    padding:5px;
+    border-radius: 4px;
+
+}
+h1{
+    text-align: center;
+    color: black;
+}
+.szoveg{
+    margin: 5px;
+    padding: 5px;
+}
+
+.lista{
+    margin: 5px;
+    padding: 5px;
+}

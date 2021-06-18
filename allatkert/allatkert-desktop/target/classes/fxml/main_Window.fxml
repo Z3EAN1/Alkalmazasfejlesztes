@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfej.controller.MainwindowController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fájl">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onBack" text="Vissza a főmenübe" />
+              <MenuItem mnemonicParsing="false" onAction="#onExit" text="Kilép" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Szerkesztés">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onAddNewAllat" text="Állat hozzáadása" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="34.0" prefWidth="822.0" text="Állatok listája">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="allatTabla" prefHeight="335.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="nevColumn" prefWidth="109.20001220703125" text="Név" />
+                <TableColumn fx:id="fajColumn" prefWidth="107.60000610351562" text="Faj" />
+                  <TableColumn fx:id="szovegColumn" prefWidth="258.79998779296875" text="Bemutatkozó Szöveg" />
+                  <TableColumn fx:id="szuldatumColumn" prefWidth="141.60003662109375" text="Születési Dátum" />
+                  <TableColumn fx:id="muveletekColumn" prefWidth="182.79998779296875" text="Műveletek" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

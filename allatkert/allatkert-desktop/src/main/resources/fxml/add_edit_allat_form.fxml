@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfej.controller.AddEditAllatController">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnSpan="2">
+         <children>
+            <Label text="Új állat vagy Módosítás">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+      <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="186.0" text="Állat neve" textAlignment="CENTER" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></Label>
+      <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="181.0" text="Állatfaj*" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></Label>
+      <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="204.0" text="Fénykép url" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></Label>
+      <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="186.0" text="Bemutatkozó szöveg*" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></Label>
+      <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="183.0" text="Születési dátum*" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+         <children>
+            <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#onSave" text="Mentés" />
+            <Button mnemonicParsing="false" onAction="#onCancel" text="Mégse" />
+         </children>
+         <padding>
+            <Insets right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <TextField fx:id="nev" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="faj" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="fenykep" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="szoveg" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <DatePicker fx:id="szuldatum" prefHeight="26.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>

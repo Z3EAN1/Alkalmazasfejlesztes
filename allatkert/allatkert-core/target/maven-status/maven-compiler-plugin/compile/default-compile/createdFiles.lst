@@ -1,0 +1,12 @@
+hu\alkfej\config\Configuration.class
+hu\alkfej\dao\OrokbefogadhatoAllatDAO.class
+hu\alkfej\model\enums\TamogatasGyak.class
+hu\alkfej\dao\KonyvelesDAOImpl.class
+hu\alkfej\dao\OrokbefogadoDAO.class
+hu\alkfej\model\OrokbefogadhatoAllat.class
+hu\alkfej\dao\KonyvelesDAO.class
+hu\alkfej\dao\OrokbefogadhatoAllatDAOImpl.class
+hu\alkfej\model\Konyveles.class
+hu\alkfej\model\enums\TamogatasTipusa.class
+hu\alkfej\model\Orokbefogado.class
+hu\alkfej\dao\OrokbefogadoDAOImpl.class

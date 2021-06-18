@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfej.controller.EledelController">
+   <center>
+       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+           <children>
+               <TableView fx:id="konyvelesTabla" prefHeight="401.0" prefWidth="800.0">
+                   <columns>
+                       <TableColumn fx:id="mikorColumn" prefWidth="81.80001527070999" text="Időpont" />
+                       <TableColumn fx:id="tamogatColumn" prefWidth="124.79998779296875" text="Támogatás típusa" />
+                       <TableColumn fx:id="ertelColumn" prefWidth="121.60005187988281" text="Összeg/Mennyiség" />
+                       <TableColumn fx:id="gyakorisagColumn" prefWidth="101.5999755859375" text="Gyakoriság" />
+                       <TableColumn fx:id="emberColumn" prefWidth="122.4000244140625" text="Örökbefogadó" />
+                       <TableColumn fx:id="allatColumn" prefWidth="109.2000732421875" text="Örökbefogadott" />
+                   </columns>
+               </TableView>
+           </children></VBox>
+   </center>
+   <top>
+       <MenuBar BorderPane.alignment="CENTER">
+           <menus>
+               <Menu mnemonicParsing="false" text="Fájl">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#onKonyveles" text="Vissza a könyveléshez" />
+                       <MenuItem mnemonicParsing="false" onAction="#onBack" text="Viszsza a főmenübe" />
+                  <MenuItem mnemonicParsing="false" onAction="#onExit" text="Kilép" />
+                   </items>
+               </Menu>
+           </menus>
+       </MenuBar>
+   </top>
+</BorderPane>

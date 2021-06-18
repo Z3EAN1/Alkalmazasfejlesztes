@@ -1,0 +1,51 @@
+body{
+    font-family: "Times New Roman";
+    background-color:darkseagreen;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table, td, th {
+    border: 2px solid black;
+}
+
+td {
+    text-align: center;
+
+}
+td, th {
+    padding: 8px;
+}
+th{
+    background-color: #6b6b47;
+}
+
+tr:nth-child(even) {background-color: white;}
+.tabla2{
+    background-color:#f5f5f0;
+}
+.gomb1{
+    font-size: 20px;
+    background-color: lightgrey;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+.gomb2{
+    font-size: 20px;
+    background-color: lightgrey;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+div{
+    margin: 5px;
+    padding: 5px;
+}
+
